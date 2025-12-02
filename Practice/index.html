@@ -1,88 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        a{
-            margin-right:10px;
-        }
-        .box{
-            display: inline-block;
-            text-align: center;
-            height: 200px;
-            width: 150px;
-            margin: 10px;
-
-        }
-        .container{
-            border: 2px solid black;
-            padding: 1%;
-        }
-        .box1{
-            background-color: red;
-        }
-        .box2{
-            background-color: greenyellow;
-        }
-        .box3{
-            background-color: blue;
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <h2>CSS Box Model</h2>
-                <div style="background-color: yellow; border: 25px solid blue; padding: 20px; margin: 30px; width: 500px;">
-                <p style="text-align:center;">ABES Engg College Ghaziabad</p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="photo">AS</div>
+        <h2>Aayushi Sharma</h2>
+        <p>B.Tech - CSE<br />Roll: 2025B0101187<br />1st Year</p>
+      </div>
+      <div class="card">
+        <div class="photo">KS</div>
+        <h2>Khushi Saxena</h2>
+        <p>B.Tech - IT<br />Roll: 2025B0101188<br />1st Year</p>
+      </div>
+      <div class="card">
+        <div class="photo">UG</div>
+        <h2>Ujjwal Goel</h2>
+        <p>B.Tech - ECE<br />Roll: 2025B0101189<br />1st Year</p>
+      </div>
     </div>
-
-    <div>
-        <h2 style="display: block;">display: block(Heading/Paragraphs)</h2>
-        <h1 style="background-color: cornflowerblue;display: block;">Amazon - Online Shopping</h1>
-        <p style="background-color: limegreen;">This is a full-width paragraph like a blog or product description</p>
-    </div>
-
-    <div>
-        <h2>displya:inline (Navigation links)</h2>
-        <div style="display: inline; margin-right: 100px;">
-            <a href="#">Home</a>
-            <a href="#">Deals</a>
-            <a href="#">Cart</a>
-        </div>
-    </div>
-    <div class = "container">
-        <h2>
-            Display: inline-Block (Product Cards)
-        </h2>
-        <div class="box1 box">
-            <h3>Book</h3>
-            <p>$10</p>
-
-        </div>
-        <div class = "box2 box">
-            <h3>Book</h3>
-            <p>$10</p>
-        </div>
-        <div class = "box3 box">
-            <h3>Book</h3>
-            <p>$10</p>
-        </div>
-    </div>
-    <div>
-        <h1>
-            Float (Image in an article)
-        </h1>
-            <img src="apple.jpg" alt="" style="float: left; width: 500px; height: 500px;">
-            
-            <p>This is Apple's New Macbook M4 Air which comes with 16GB ram and 256 GB storage and it is one of the powerfull machine possible in its segment </p>
-            
-    </div>
-    <hr style="clear:both">
-            <p style="clear: both;background-color: darkkhaki;">This is the footer section</p>
-
-</body>
+  </body>
 </html>
