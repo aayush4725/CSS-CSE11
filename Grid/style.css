@@ -1,37 +1,42 @@
-.container {
-  display: grid;
-  height: 500px;
-  width: 1000px;
-  background-color: aqua;
-  border: 1px solid black;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  /* grid-template-areas: "header header header header "
-      " main main . sidebar" 
-      "footer footer footer footer"; */
-  column-gap: 10px;
-  justify-items: center;
-  align-items: center;
+.container{
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    background-color: aqua;
+    border: 1px solid black;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(3,100px);
+    /* it requires space in body works for horizontal and takes full grid */
+    justify-content:space-around;
+    /* works vertically */
+    justify-items: center;
+
+    /* 3 equal columns */
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas: 
+      "header header header"
+      "main sidebar item3"
+      "footer footer footer"; */
+
+    column-gap: 0px;
 }
-/* .item1{
-    grid-area: header;
+
+.item{
+    background-color: brown;
+    border: 1px solid black;
+    text-align: center;
+    align-content: center;
+    color: white;
 }
-.item2{
-grid-area: main;
-}
-.item3{
+
+/* .item1{ grid-area: header; }
+.item2{ grid-area: main; }
+.item3{ grid-area: item3; }
+.item4{ grid-area: footer; } */
+
+.sidebar{
     grid-area: sidebar;
-}
-.item4{
-   grid-area: footer;
-}  */
-.item {
-  height: 100px;
-  width: 100px;
-  background: steelblue;
-  border: 1px solid black;
-  text-align: center;
-  align-content: center;
-  color: aliceblue;
+    background: cyan;  /* blue box */
 }
