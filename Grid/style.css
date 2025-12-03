@@ -6,10 +6,17 @@
     border: 1px solid black;
     grid-template-columns: repeat(4,100px);
     grid-template-rows: repeat(3,100px);
-    /* it requires space in body works for horizontal and takes full grid */
+    /* it requires space in body works for horizontal and takes full grid  column spoacing*/ 
     justify-content:space-around;
-    /* works vertically */
-    justify-items: center;
+
+    /* works vertically row spacing */
+    align-content: space-around;
+
+    
+    /* */
+    grid-auto-columns: 60px;
+    
+
 
     /* 3 equal columns */
     /* grid-template-columns: repeat(3, 1fr);
