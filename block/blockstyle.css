@@ -1,9 +1,9 @@
-/* .As{
+.As{
     display :block;
 }
 .As1{
     display: inline;
-} */
+}
  .container{
       border: 2px black solid;
       padding: 1%;
